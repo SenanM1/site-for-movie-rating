@@ -3,6 +3,8 @@ import { useEffect } from "react";
 
 import MovieListComponent from "./MovieListComponent";
 import "./Movies.css"
+import Pagination from "./Pagination";
+
 
 function createMovieComp(movie){
     return (
@@ -34,6 +36,7 @@ function Movies() {
     const [movies, setMovies] = useState([]);
     const [fetchError, setFetchError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    
 
     const API_URL = 'http://localhost:3500/imdb_top_1000';
 
@@ -58,15 +61,36 @@ function Movies() {
         
     },[])
 
+    //For Pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage, setPostsPerPage] = useState(50);
+
+    const lastPostIndex = currentPage * postsPerPage;
+    const firstPostIndex = lastPostIndex - postsPerPage;
+    const currentPosts = movies.slice(firstPostIndex, lastPostIndex);
+
     return (
         <div className="MoviesPage">
             <h1>Top 1000 Movies</h1>
-            {isLoading && <p>Loading Movies...</p>}
-            {fetchError && <p style={{color: "red"}}>{`Error: ${fetchError}`}</p>}
-            {!fetchError && !isLoading && <div className="movie-list">
-                {createMovieCompList(movies)}
+            {
+            isLoading && <p>Loading Movies...</p>
+            }
+            {
+            fetchError && <p style={{color: "red"}}>{`Error: ${fetchError}`}</p>}
+            {
+            !fetchError && !isLoading &&
+            <div>
+                <Pagination 
+                    totalPosts = {movies.length} 
+                    postsPerPage={postsPerPage}
+                    setCurrentPage={setCurrentPage}
+                />
+                <div className="movie-list">
+                    {createMovieCompList(currentPosts)}
+                </div>
+            </div>
+            }
             
-            </div>}
         </div>
     )
 }

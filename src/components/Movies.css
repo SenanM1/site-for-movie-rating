@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .movie-list {
@@ -15,7 +16,7 @@ body {
 
 .MoviesPage h1, p {
     text-align: center;
-    color: #263159;
+    color: #111827;
     letter-spacing: 2px;
     font-style: italic;
 }

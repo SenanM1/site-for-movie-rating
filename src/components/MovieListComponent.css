@@ -20,6 +20,10 @@ body {
     box-shadow: 0px 0px 120px -25px rgba(0,0,0, 0.5);
 }
 
+.container:hover {
+    transform: scale(1.1);
+}
+
 .imgContainer { 
     grid-area: 1 / 1 / 2 / 2; 
 
