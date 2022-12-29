@@ -1,41 +1,21 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import Movies from "./Movies";
+import Movies from "./components/Movies";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import ContactMe from "./components/ContactMe";
+
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
-    const [movies, setMovies] = useState([]);
-    const [fetchError, setFetchError] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-
-    const API_URL = 'http://localhost:3500/imdb_top_1000';
-
-    useEffect(() => {
-        const fetchMovies = async () => {
-            try {
-                const res = await fetch(API_URL);
-                if(!res.ok) throw Error('The Data has not received');
-                const moviesList = await res.json();
-                setMovies(moviesList);
-                setFetchError(null);
-            } catch (e){
-                setFetchError(e.message);
-            } finally {
-                setIsLoading(false);
-            }
-        }
-
-        setTimeout(() => {
-            fetchMovies();
-        }, 2000);
-        
-    },[])
 
     return (
-        <div> 
-            <Movies />
-            {isLoading && <p>Loading Movies...</p>}
-            {fetchError && <p style={{color: "red"}}>{`Error: ${fetchError}`}</p>}
-        </div>
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route exact path='/'><Home /></Route>
+                <Route path='/movies'><Movies /></Route>
+                <Route path='/contactme'><ContactMe /></Route>
+            </Switch>
+        </Router>
     )
 };
 

@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #251749;
+    letter-spacing: 1px;
+}
