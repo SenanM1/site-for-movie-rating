@@ -1,6 +1,35 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
+import MovieListComponent from "./MovieListComponent";
+import "./Movies.css"
+
+function createMovieComp(movie){
+    return (
+        <MovieListComponent
+        key = {movie.Id}
+        id = {movie.Id}
+        poster = {movie.Poster_Link}
+        title = {movie.Series_Title}
+        year = {movie.Released_Year}
+        rating = {movie.IMDB_Rating}
+        genre = {movie.Genre}
+        runtime = {movie.Runtime}
+        overview = {movie.Overview}
+        />
+    )
+}
+
+function createMovieCompList(movies){
+    let movieComps = [];
+
+    for (let movie of movies){
+        movieComps.push(createMovieComp(movie));
+    }
+
+    return movieComps;
+};
+
 function Movies() {
     const [movies, setMovies] = useState([]);
     const [fetchError, setFetchError] = useState(null);
@@ -30,10 +59,14 @@ function Movies() {
     },[])
 
     return (
-        <div>
-            <h1>Movies List</h1>
+        <div className="MoviesPage">
+            <h1>Top 1000 Movies</h1>
             {isLoading && <p>Loading Movies...</p>}
             {fetchError && <p style={{color: "red"}}>{`Error: ${fetchError}`}</p>}
+            {!fetchError && !isLoading && <div className="movie-list">
+                {createMovieCompList(movies)}
+            
+            </div>}
         </div>
     )
 }
