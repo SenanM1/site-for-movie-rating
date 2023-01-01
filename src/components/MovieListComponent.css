@@ -60,12 +60,14 @@ img {
     font-weight: 600;
     letter-spacing: 0.5px;
     color: #251749;
+    text-align: right;
 }
 
 .year {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
+    color: #251749;
 }
 
 .rating {

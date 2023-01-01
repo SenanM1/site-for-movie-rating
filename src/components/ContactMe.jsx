@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 const ContactMe = () => {
   const [formStatus, setFormStatus] = React.useState('Send')
   const onSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     
-    setFormStatus('Sent')
+    setFormStatus('Sent');
 
-    const { subject, email, message } = e.target.elements
+    const { subject, email, message } = e.target.elements;
     let fetched_info = {
       subject: subject.value,
       email: email.value,
       message: message.value,
-    }
+    };
+  
     console.log(fetched_info)
   }
   return (
@@ -26,8 +27,6 @@ const ContactMe = () => {
         <li><a href='#'>Contact Us</a></li>
     </ul>
 </nav> 
-
-
 
       <h2 className="mb-3">Contact the Team</h2>
       <div class id="left-box"></div>
