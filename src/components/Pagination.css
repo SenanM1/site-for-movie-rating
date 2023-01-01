@@ -12,10 +12,10 @@ button {
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.5rem;
-  padding: .75rem 1.2rem;
+  padding: .5rem 1rem;
   text-align: center;
   text-decoration: none #251749 solid;
   transition-duration: .2s;

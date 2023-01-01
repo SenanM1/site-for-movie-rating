@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.film_card {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    row-gap: 20px;
+
+    width: 95%;
+    margin: 0 auto;
+
+    background-color: #181D31;
+    padding: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+    
+.first_part { 
+    grid-area: 1 / 1 / 2 / 3;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #ffffff;
+    
+}
+
+.first_half {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.first_end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img_container { 
+    grid-area: 2 / 1 / 3 / 2; 
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img_container img {
+    width: 300px;
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    
+    opacity: 0.9;
+    
+    transition: all 0.5s;
+}
+
+.img_container img:hover {
+    transform: scale(1.05);
+}
+
+.more_details { 
+    grid-area: 2 / 2 / 3 / 3; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.movie_title {
+    font-size: 48px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+.first_half div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.meta-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+}
+
+.movie_imdb span {
+    font-weight: 300;
+}
+
+.movie_overview,
+.movie_genre,
+.movie_director,
+.movie_stars {
+    color: #ffffff;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.movie_overview span,
+.movie_genre span,
+.movie_director span,
+.movie_stars span {
+    font-weight: 200;
+    font-style: italic;
+}

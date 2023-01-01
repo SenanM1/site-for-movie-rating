@@ -46,7 +46,7 @@ function App() {
             <Switch>
                 <Route exact path='/'><Home /></Route>
                 <Route exact path='/movies'><Movies movies={movies} fetchError={fetchError} isLoading={isLoading}/></Route>
-                <Route exact path='/contactme'><ContactMe /></Route>
+                <Route exaxct path='/contactme'><ContactMe /></Route>
                 <Route exact path='/movies/:id'><DetailedMovie movies={movies}/></Route>
             </Switch>
         </Router>
