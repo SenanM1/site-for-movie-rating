@@ -6,10 +6,38 @@ import DetailedMovie from "./components/DetailedMovie";
 
 import './App.css';
 
-
+import { useState } from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
+    const [movies, setMovies] = useState([]);
+    const [fetchError, setFetchError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    
+
+    const API_URL = 'http://localhost:3500/imdb_top_1000';
+
+    useEffect(() => {
+        const fetchMovies = async () => {
+            try {
+                const res = await fetch(API_URL);
+                if(!res.ok) throw Error('The Data has not received');
+                const moviesList = await res.json();
+                setMovies(moviesList);
+                setFetchError(null);
+            } catch (e){
+                setFetchError(e.message);
+            } finally {
+                setIsLoading(false);
+            }
+        }
+
+        setTimeout(() => {
+            fetchMovies();
+        }, 2000);
+        
+    },[])
 
     return (
         <main>
@@ -17,9 +45,9 @@ function App() {
             <Navbar />
             <Switch>
                 <Route exact path='/'><Home /></Route>
-                <Route path='/movies'><Movies /></Route>
-                <Route path='/contactme'><ContactMe /></Route>
-                <Route path='/detailedMovie'><DetailedMovie /></Route>
+                <Route exact path='/movies'><Movies movies={movies} fetchError={fetchError} isLoading={isLoading}/></Route>
+                <Route exact path='/contactme'><ContactMe /></Route>
+                <Route exact path='/movies/:id'><DetailedMovie movies={movies}/></Route>
             </Switch>
         </Router>
         </main>

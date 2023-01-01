@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useEffect } from "react";
 
 import MovieListComponent from "./MovieListComponent";
 import "./Movies.css"
@@ -32,34 +31,9 @@ function createMovieCompList(movies){
     return movieComps;
 };
 
-function Movies() {
-    const [movies, setMovies] = useState([]);
-    const [fetchError, setFetchError] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-    
+function Movies(props) {
 
-    const API_URL = 'http://localhost:3500/imdb_top_1000';
-
-    useEffect(() => {
-        const fetchMovies = async () => {
-            try {
-                const res = await fetch(API_URL);
-                if(!res.ok) throw Error('The Data has not received');
-                const moviesList = await res.json();
-                setMovies(moviesList);
-                setFetchError(null);
-            } catch (e){
-                setFetchError(e.message);
-            } finally {
-                setIsLoading(false);
-            }
-        }
-
-        setTimeout(() => {
-            fetchMovies();
-        }, 2000);
-        
-    },[])
+    const {movies, fetchError, isLoading} = props;
 
     //For Pagination
     const [currentPage, setCurrentPage] = useState(1);
