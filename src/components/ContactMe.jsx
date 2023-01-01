@@ -19,18 +19,16 @@ const ContactMe = () => {
   return (
     
     <div className="container mt-5">
-    <nav>
-    <ul>
-        <span><a href='#'>Movie Rating Site</a></span>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#'>Movies</a></li>
-        <li><a href='#'>Contact Us</a></li>
-    </ul>
-</nav> 
+     <div class="navbar">
+      <a href="#contact">Contact Us</a>
+      <a href="#news">Movies</a>
+      <a href="#home">Home</a>
+      <span><a href="#about" class="logo">Movie Rating Site</a></span>
+   </div>
 
-      <h2 className="mb-3">Contact the Team</h2>
+      <h2 className="title">Contact the Team</h2>
       <div class id="left-box"></div>
-      <div class id="box" style={{background: "grey", padding: "20px"}}>
+      <div class id="box" style={{background: "grey"}}>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <input className="form-control" type="text" placeholder="Subject" id="subject"/>
@@ -41,7 +39,7 @@ const ContactMe = () => {
         <div className="mb-3">
           <textarea className="form-control" placeholder="Your message..." id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit">
+        <button className="btn" type="submit">
           {formStatus}
         </button>
       </form>
