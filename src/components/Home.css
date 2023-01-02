@@ -1,0 +1,74 @@
+.Home {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div.containers {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container {
+  background: rgb(0, 0, 0);
+  opacity: .8;
+  color: aliceblue;
+  padding: 3ch;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  margin: 2em;
+}
+
+.links {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  border: none;
+  appearance: auto;
+  cursor: pointer;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-family: monospace;       
+  border-radius: 7px;
+  margin-top: 5px;
+  height: 40px;
+  transition: box-shadow .10s,transform .10s;
+  padding-left: 10px;
+  padding-right: 12px
+}
+.links:hover {
+  box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5e5f68 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+div.profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+
+.profile > h2 {
+  font-family: 'Trocchi', serif; 
+  font-size: 18px; 
+  margin: 5px;
+  line-height: 23px;
+  color: aliceblue;
+  margin-left: 15px;
+}
+
+.profile > td {
+  font-family: 'Trocchi', serif; 
+  font-size: 18px; 
+  margin: 5px;
+  line-height: 23px;
+  color: aliceblue;
+  margin-left: 15px;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
