@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import MovieListComponent from "./MovieListComponent";
-import "./Movies.css"
+import MoviesCSS from "./Movies.module.css"
 import Pagination from "./Pagination";
 
 
@@ -44,8 +44,8 @@ function Movies(props) {
     const currentPosts = movies.slice(firstPostIndex, lastPostIndex);
 
     return (
-        <div className="MoviesPage">
-            <h1>Top 1000 Movies</h1>
+        <div className={MoviesCSS.MoviesPage}>
+            <h1 className={MoviesCSS.header}>Top 1000 Movies</h1>
             {
             isLoading && <p>Loading Movies...</p>
             }
@@ -59,7 +59,7 @@ function Movies(props) {
                     postsPerPage={postsPerPage}
                     setCurrentPage={setCurrentPage}
                 />
-                <div className="movie-list">
+                <div className={MoviesCSS.movie_list}>
                     {createMovieCompList(currentPosts)}
                 </div>
             </div>

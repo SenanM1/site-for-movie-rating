@@ -1,23 +1,23 @@
-import './MovieListComponent.css'
+import MovieListCSS from './MovieListComponent.module.css'
 import { Link } from 'react-router-dom';
 
 function MovieListComponent(props) {
 
     return (
         <Link to={`/movies/${props.id}`}>
-            <div className='container'>
-                <div className='imgContainer'><img src={props.poster} alt="Poster Picture" /></div>
-                <div className="details">
+            <div className={MovieListCSS.container}>
+                <div className={MovieListCSS.imgContainer}><img src={props.poster} alt="Poster Picture" /></div>
+                <div className={MovieListCSS.details}>
                     <div>
-                    <span className="series_title">{props.title}</span>
-                    <span className="year"> ({props.year})</span>
+                    <span className={MovieListCSS.series_title}>{props.title}</span>
+                    <span className={MovieListCSS.year}> ({props.year})</span>
                     </div>
-                    <span className="rating">IMDB Rating: ⭐️ {props.rating}</span>
-                    <span className="genre">Genres: {props.genre}</span>
-                    <span className='runtime'>Runtime: {props.runtime}</span>
+                    <span className={MovieListCSS.rating}>IMDB Rating: ⭐️ {props.rating}</span>
+                    <span className={MovieListCSS.genre}>Genres: {props.genre}</span>
+                    <span className={MovieListCSS.runtime}>Runtime: {props.runtime}</span>
                 </div>
-                <div className='overview'>
-                    <span className='overview-text'>Overview:</span>
+                <div className={MovieListCSS.overview}>
+                    <span className={MovieListCSS.overview_text}>Overview:</span>
                     <span>{props.overview}</span>
                 </div>
             </div>

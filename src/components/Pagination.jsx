@@ -1,4 +1,4 @@
-import './Pagination.css';
+import PaginationCSS from './Pagination.module.css';
 
 function Pagination(props) {
     let pages = [];
@@ -8,10 +8,10 @@ function Pagination(props) {
     }
 
     return (
-        <div className='content'>
+        <div className={PaginationCSS.content}>
             {
                 pages.map((page, index) => {
-                    return <button key={index} onClick={() => props.setCurrentPage(page)}>{page}</button>
+                    return <button class={PaginationCSS.btn} key={index} onClick={() => props.setCurrentPage(page)}>{page}</button>
                 })
             }
         </div>

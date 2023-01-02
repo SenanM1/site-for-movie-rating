@@ -94,7 +94,7 @@
     color: #ffffff;
 }
 
-.meta-part {
+.meta_part {
     display: flex;
     flex-direction: column;
     align-items: center;

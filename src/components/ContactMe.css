@@ -1,9 +1,10 @@
 
-body{
+/* body{
   background:url(https://img.freepik.com/free-photo/modern-geometrical-wallpaper-with-round-lines_23-2148811528.jpg?w=1380&t=st=1672613273~exp=1672613873~hmac=39ed258059e7518ab594e909326814076cdbb423bb7f926b3d7543bd13b197a5);
 background-repeat: no-repeat;
 background-size: cover;
-}
+} */
+
 .navbar {
   background-color: grey;
   overflow: hidden;

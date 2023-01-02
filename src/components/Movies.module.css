@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 
-.movie-list {
+.movie_list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -19,7 +19,7 @@ body {
     transition: all 0.4s;
 }
 
-.MoviesPage h1, p {
+.header, .MoviesPage p {
     text-align: center;
     color: #111827;
     letter-spacing: 2px;

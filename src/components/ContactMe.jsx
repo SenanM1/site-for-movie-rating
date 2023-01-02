@@ -1,4 +1,5 @@
 import React from 'react';
+import './ContactMe.css';
 
 const ContactMe = () => {
   const [formStatus, setFormStatus] = React.useState('Send')
@@ -19,13 +20,6 @@ const ContactMe = () => {
   return (
     
     <div className="container mt-5">
-     <div class="navbar">
-      <a href="#contact">Contact Us</a>
-      <a href="#news">Movies</a>
-      <a href="#home">Home</a>
-      <span><a href="#about" class="logo">Movie Rating Site</a></span>
-   </div>
-
       <h2 className="title">Contact the Team</h2>
       <div class id="left-box"></div>
       <div class id="box" style={{background: "grey"}}>
