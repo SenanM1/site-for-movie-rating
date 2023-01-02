@@ -10,10 +10,10 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
-    width: 500px;
+    width: 650px;
     height: 250px;
-    margin: 50px auto;
-    padding: 25px;
+    margin: 25px auto;
+    padding: 20px;
 
     border-radius: 10px;
     transition: all 0.4s;
@@ -88,6 +88,13 @@ img {
     color: #263159;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
 .overview {
     font-size: 16px;
     font-style: italic;
@@ -100,4 +107,62 @@ img {
     font-size: 16px;
     font-weight: 400;
     align-self: flex-start;
+}
+
+.button_to_details {
+    text-decoration: none;
+    font-size: 18px;
+    color: #251749;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 695px) {
+    .container {
+        width: 550px;
+    }
+}
+
+@media (max-width: 595px) {
+    .container {
+        width: 450px;
+    }
+    .series_title {
+        font-size: 20px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+
+    .runtime {
+        font-size: 14px;
+    }
+
+    .genre {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 495px) {
+    .container {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .series_title {
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .genre {
+        font-size: 14px;
+    }
 }

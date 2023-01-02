@@ -37,7 +37,7 @@ function Movies(props) {
 
     //For Pagination
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(50);
+    const [postsPerPage, setPostsPerPage] = useState(100);
 
     const lastPostIndex = currentPage * postsPerPage;
     const firstPostIndex = lastPostIndex - postsPerPage;

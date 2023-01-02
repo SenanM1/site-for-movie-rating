@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 function MovieListComponent(props) {
 
     return (
-        <Link to={`/movies/${props.id}`}>
             <div className={MovieListCSS.container}>
                 <div className={MovieListCSS.imgContainer}><img src={props.poster} alt="Poster Picture" /></div>
                 <div className={MovieListCSS.details}>
-                    <div>
+                    <div className={MovieListCSS.title}>
                     <span className={MovieListCSS.series_title}>{props.title}</span>
                     <span className={MovieListCSS.year}> ({props.year})</span>
                     </div>
@@ -19,9 +18,9 @@ function MovieListComponent(props) {
                 <div className={MovieListCSS.overview}>
                     <span className={MovieListCSS.overview_text}>Overview:</span>
                     <span>{props.overview}</span>
+                    <Link className={MovieListCSS.button_to_details} to={`/movies/${props.id}`}>Click to see more details...</Link>
                 </div>
             </div>
-        </Link>
     )
 }
 
