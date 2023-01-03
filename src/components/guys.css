@@ -1,0 +1,12 @@
+div.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3ch;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    margin: 2em;
+    background-color: #fbf0e4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
