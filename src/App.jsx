@@ -40,17 +40,17 @@ function App() {
     },[])
 
     return (
-        <main>
+        
         <Router>
             <Navbar />
             <Switch>
-                <Route exact path='/'><Home /></Route>
-                <Route exact path='/movies'><Movies movies={movies} fetchError={fetchError} isLoading={isLoading}/></Route>
-                <Route exaxct path='/contactme'><ContactMe /></Route>
-                <Route exact path='/movies/:id'><DetailedMovie movies={movies}/></Route>
+                <Route exact path='/site-for-movie-rating/home'><Home /></Route>
+                <Route exact path='/site-for-movie-rating/movies'><Movies movies={movies} fetchError={fetchError} isLoading={isLoading}/></Route>
+                <Route path='/site-for-movie-rating/contactme'><ContactMe /></Route>
+                <Route path='/site-for-movie-rating/movies/:id'><DetailedMovie movies={movies}/></Route>
             </Switch>
         </Router>
-        </main>
+        
     )
 };
 

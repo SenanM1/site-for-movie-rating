@@ -18,7 +18,7 @@ function MovieListComponent(props) {
                 <div className={MovieListCSS.overview}>
                     <span className={MovieListCSS.overview_text}>Overview:</span>
                     <span>{props.overview}</span>
-                    <Link className={MovieListCSS.button_to_details} to={`/movies/${props.id}`}>Click to see more details...</Link>
+                    <Link className={MovieListCSS.button_to_details} to={`/site-for-movie-rating/movies/${props.id}`}>Click to see more details...</Link>
                 </div>
             </div>
     )

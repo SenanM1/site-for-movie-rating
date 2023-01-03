@@ -7,11 +7,11 @@ function Navbar() {
 
     return (
         <div className={NavbarCSS.navbar}>
-            <Link to='/'><span className={NavbarCSS.title}>SiteForMovieRating</span></Link>
+            <Link to='/site-for-movie-rating/home'><span className={NavbarCSS.title}>SiteForMovieRating</span></Link>
             <div className={`${NavbarCSS.links} ${isOpen && NavbarCSS.open}`}>
-                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/">Home</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/movies">Movies</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/contactme">Contact Me</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/home">Home</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/movies">Movies</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/contactme">Contact Me</Link>
             </div>
             <div className={`${NavbarCSS.nav_toggle} ${isOpen && NavbarCSS.open}`} onClick={() => setIsOpen(!isOpen)}>
                 <div className={NavbarCSS.bar}></div>
