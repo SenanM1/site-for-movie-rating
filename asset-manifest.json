@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/site-for-movie-rating/static/css/main.85dda441.css",
-    "main.js": "/site-for-movie-rating/static/js/main.5d8d901b.js",
+    "main.css": "/site-for-movie-rating/static/css/main.35301cc7.css",
+    "main.js": "/site-for-movie-rating/static/js/main.b7f6fe2d.js",
     "index.html": "/site-for-movie-rating/index.html",
-    "main.85dda441.css.map": "/site-for-movie-rating/static/css/main.85dda441.css.map",
-    "main.5d8d901b.js.map": "/site-for-movie-rating/static/js/main.5d8d901b.js.map"
+    "main.35301cc7.css.map": "/site-for-movie-rating/static/css/main.35301cc7.css.map",
+    "main.b7f6fe2d.js.map": "/site-for-movie-rating/static/js/main.b7f6fe2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.85dda441.css",
-    "static/js/main.5d8d901b.js"
+    "static/css/main.35301cc7.css",
+    "static/js/main.b7f6fe2d.js"
   ]
 }
