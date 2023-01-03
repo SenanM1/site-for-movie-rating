@@ -16,3 +16,13 @@ div.card {
   color: black;
 }
   
+.profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+
+img {
+  margin: 6px;
+  padding-right: 15px;
+}
