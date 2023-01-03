@@ -1,12 +1,18 @@
 div.card {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 3ch;
-    width: 100%;
-    max-width: 450px;
-    border-radius: 20px;
-    margin: 2em;
-    background-color: #fbf0e4;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  }
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 3ch;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  margin: 2em;
+  background: rgb(8, 44, 112);
+  opacity: .8;
+  color: aliceblue;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.buttons {
+  color: black;
+}
   
