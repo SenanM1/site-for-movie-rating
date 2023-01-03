@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import ContactMe from "./components/ContactMe";
 import DetailedMovie from "./components/DetailedMovie";
+import Footer from "./components/Footer";
 
 import './App.css';
 
@@ -40,7 +41,7 @@ function App() {
     },[])
 
     return (
-        
+
         <Router>
             <Navbar />
             <Switch>
@@ -49,7 +50,9 @@ function App() {
                 <Route path='/site-for-movie-rating/contactme'><ContactMe /></Route>
                 <Route path='/site-for-movie-rating/movies/:id'><DetailedMovie movies={movies}/></Route>
             </Switch>
+            <Footer />
         </Router>
+        
         
     )
 };
