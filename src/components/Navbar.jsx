@@ -7,9 +7,9 @@ function Navbar() {
 
     return (
         <div className={NavbarCSS.navbar}>
-            <Link to='/site-for-movie-rating/home'><span className={NavbarCSS.title}>SiteForMovieRating</span></Link>
+            <Link to='/site-for-movie-rating'><span className={NavbarCSS.title}>SiteForMovieRating</span></Link>
             <div className={`${NavbarCSS.links} ${isOpen && NavbarCSS.open}`}>
-                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/home">Home</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating">Home</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/movies">Movies</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} className={NavbarCSS.link} to="/site-for-movie-rating/contactme">Contact Me</Link>
             </div>

@@ -44,7 +44,7 @@ function App() {
         <Router>
             <Navbar />
             <Switch>
-                <Route exact path='/site-for-movie-rating/home'><Home /></Route>
+                <Route exact path='/site-for-movie-rating'><Home /></Route>
                 <Route exact path='/site-for-movie-rating/movies'><Movies movies={movies} fetchError={fetchError} isLoading={isLoading}/></Route>
                 <Route path='/site-for-movie-rating/contactme'><ContactMe /></Route>
                 <Route path='/site-for-movie-rating/movies/:id'><DetailedMovie movies={movies}/></Route>
