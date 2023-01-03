@@ -10,8 +10,6 @@ const ContactMe = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const notify = () => toast('Submitted Succesfully.');
-
   const submit = (e) => {
     e.preventDefault();
 
@@ -30,6 +28,10 @@ const ContactMe = () => {
     }).catch((err)=>{
       toast.error('Error: ' + err);
     });
+
+    setSubject("");
+    setEmail("");
+    setMessage("");
   }
   
   return (
@@ -54,7 +56,7 @@ const ContactMe = () => {
 
               <div className="message-part">
                   <label htmlFor="message">Your Message</label>
-                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-indigo-900 ' required name='message' id='message' rows="4" cols="50"/>
+                  <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='border border-gray-400 block py-2 px-4 w-full rounded focus:outline-none focus:border-indigo-900 ' required name='message' id='message' rows="10"/>
               </div>
             
 

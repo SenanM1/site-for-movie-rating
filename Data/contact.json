@@ -5,30 +5,6 @@
       "email": "test@test.com",
       "message": "test",
       "id": 1
-    },
-    {
-      "subject": "test",
-      "email": "test@test.com",
-      "message": "test",
-      "id": 2
-    },
-    {
-      "subject": "test",
-      "email": "test@test.com",
-      "message": "test",
-      "id": 3
-    },
-    {
-      "subject": "Banan",
-      "email": "smardanli13986@ada.edu.az",
-      "message": "Salam",
-      "id": 4
-    },
-    {
-      "subject": "Banan",
-      "email": "smardanli13986@ada.edu.az",
-      "message": "Salam",
-      "id": 5
     }
   ]
 }
