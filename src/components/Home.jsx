@@ -2,9 +2,11 @@ import "./Home.css";
 import Guys from "./guys";
 import Button from "./Button";
 import content from "./content";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
+    <div>
     <div className="Home">
       {content.map(
         (content) => (
@@ -20,6 +22,9 @@ export default function Home() {
           )
         )
       )}
+
+      </div>
+      <Footer />
     </div>
   );
 }
