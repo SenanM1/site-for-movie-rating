@@ -1,22 +1,21 @@
-import React from 'react'
-import { FaUniversity, FaPhoneAlt} from "react-icons/fa";
+import React from "react";
+import { FaUniversity, FaPhoneAlt } from "react-icons/fa";
 import { IoIosLocate } from "react-icons/io";
-import "./Footer.css";
+import FooterCSS from "./Footer.module.css";
 function Footer() {
-
   return (
-    <div>
+    <div className={FooterCSS.body}>
       <footer>
-        <div className="container">
-          <div className="first section">
+        <div className={FooterCSS.container}>
+          <div className={`${FooterCSS.first} ${FooterCSS.section}`}>
             <h2>About Website</h2>
-            <div className="content">
+            <div className={FooterCSS.content}>
               <p>
                 This website is developed by Bachelor studens of ADA University
                 and demonstrates database about the world ranked cinema works.
               </p>
               <br />
-              <div className="social">
+              <div className={FooterCSS.social}>
                 <a href="https://multiwebpress.com">Link 1</a>
                 <a href="https://instagram.com/multiwebpress">Link 2</a>
                 <a href="https://www.youtube.com/channel/UCvB-4cVzkhvu4TkTy1hs9zA">
@@ -25,9 +24,9 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="second section">
+          <div className={`${FooterCSS.second} ${FooterCSS.section}`}>
             <h2>Authors</h2>
-            <div className="content">
+            <div className={FooterCSS.content}>
               <br />
               <p>Turgay FARHADLI</p>
               <br />
@@ -36,33 +35,37 @@ function Footer() {
               <p>Atilla SHARIFLI</p>
             </div>
           </div>
-          <div className="right section">
+          <div className={`${FooterCSS.right} ${FooterCSS.section}`}>
             <h2>Address</h2>
-            <div className="content">
-              <div className="address">
+            <div className={FooterCSS.content}>
+              <div className={FooterCSS.address}>
                 <FaUniversity />
-                <p className="text">ADA University</p>
+                <p className={FooterCSS.text}>ADA University</p>
               </div>
               <br />
-              <div className="phone">
+              <div className={FooterCSS.phone}>
                 <FaPhoneAlt />
-                <p className="text"> +994 12 437 32 35</p>
+                <p className={FooterCSS.text}> +994 12 437 32 35</p>
               </div>
               <br />
-              <div className="email">
+              <div className={FooterCSS.email}>
                 <IoIosLocate />
-                <p className="text"> 61 Ahmadbay Agha-Oglu Street, Baku, Azerbaijan, AZ1008 </p>
+                <p className={FooterCSS.text}>
+                  {" "}
+                  61 Ahmadbay Agha-Oglu Street, Baku, Azerbaijan, AZ1008{" "}
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="footer-bottom">
-          <div className="cp">
+        <div className={FooterCSS.footer_bottom}>
+          <div className={FooterCSS.cp}>
             <div>
               <span>
                 Powered By{" "}
                 <a href="www.youtube.com">
-                  © 2021 | All Rights Reserved | Made By SAT(Sanan, Atilla, Turqay) Team
+                  © 2021 | All Rights Reserved | Made By SAT(Sanan, Atilla,
+                  Turqay) Team
                 </a>
               </span>
             </div>
@@ -73,4 +76,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
