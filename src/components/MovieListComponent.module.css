@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ body {
     grid-row-gap: 0px;
 
     width: 650px;
-    height: 250px;
+    
     margin: 25px auto;
     padding: 20px;
 
