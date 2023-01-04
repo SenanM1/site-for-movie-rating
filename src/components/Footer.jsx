@@ -15,13 +15,6 @@ function Footer() {
                 and demonstrates database about the world ranked cinema works.
               </p>
               <br />
-              <div className={FooterCSS.social}>
-                <a href="https://multiwebpress.com">Link 1</a>
-                <a href="https://instagram.com/multiwebpress">Link 2</a>
-                <a href="https://www.youtube.com/channel/UCvB-4cVzkhvu4TkTy1hs9zA">
-                  Link 3
-                </a>
-              </div>
             </div>
           </div>
           <div className={`${FooterCSS.second} ${FooterCSS.section}`}>
