@@ -46,7 +46,11 @@ function Movies(props) {
     <div className={MoviesCSS.MoviesPage}>
       <h1 className={MoviesCSS.header}>Top 1000 Movies</h1>
       {isLoading && <p className={MoviesCSS.loadingText}>Loading Movies...</p>}
-      {fetchError && <p style={{ color: "red" }}>{`Error: ${fetchError}`}</p>}
+      {fetchError && (
+        <p
+          style={{ color: "red", textAlign: "center" }}
+        >{`Error: ${fetchError}`}</p>
+      )}
       {!fetchError && !isLoading && (
         <div>
           <Pagination

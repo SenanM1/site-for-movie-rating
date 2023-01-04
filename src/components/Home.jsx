@@ -1,28 +1,23 @@
 import "./Home.css";
 import Guys from "./guys";
-import Button from "./Button";
 import content from "./content";
 import Footer from "./Footer";
 
 export default function Home() {
   return (
     <div>
-    <div className="Home">
-      {content.map(
-        (content) => (
-          (<Button git={content.git} you={content.you} />),
-          (
-            <Guys
-              key={content.id}
-              name={content.name}
-              mail={content.mail}
-              image={content.image}
-              info={content.info}
-            />
-          )
-        )
-      )}
-
+      <div className="Home">
+        {content.map((c) => (
+          <Guys
+            key={c.id}
+            name={c.name}
+            mail={c.mail}
+            image={c.image}
+            info={c.info}
+            git={c.git}
+            you={c.you}
+          />
+        ))}
       </div>
       <Footer />
     </div>

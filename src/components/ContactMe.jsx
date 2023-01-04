@@ -86,7 +86,7 @@ const ContactMe = () => {
 
         <div className="card-footer">
           <button
-            onClick={submit}
+            onClick={subject !== "" && message !== "" && email !== "" && submit}
             type="submit"
             className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none"
           >
