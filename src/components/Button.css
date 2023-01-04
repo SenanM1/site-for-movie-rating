@@ -1,47 +1,53 @@
-div.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-  }
-  
-  a.gitHub {
-    display: flex;
-    padding: 5px 8px;
-    background: #737e8b;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  a.youTube {
-    display: flex;
-    padding: 5px 8px;
-    background: rgb(252, 8, 8);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    overflow: hidden;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 5px;
-  }
-  .youTube:hover {
-    box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5e5f68 0 -3px 0 inset;
-    background: #ffffff;
-    transform: translateY(-2px);
-  }
-  .gitHub:hover {
-    box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5e5f68 0 -3px 0 inset;
-    background: #ffffff;
-    transform: translateY(-2px);
-  }
-  
+.y {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.gitHub {
+  padding: 5px 8px;
+  background: #737e8b;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-family: monospace;       
+  border-radius: 7px;
+  margin-top: 5px;
+  height: 40px;
+  border: none;
+  transition: box-shadow .10s,transform .10s;
+}
+
+.youTube {
+  padding: 5px 8px;
+  background: rgb(252, 8, 8);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-family: monospace;       
+  border-radius: 7px;
+  margin-top: 5px;
+  height: 40px;
+  border: none;
+  transition: box-shadow .10s,transform .10s;
+}
+.youTube:hover {
+  box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5e5f68 0 -3px 0 inset;
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+.gitHub:hover {
+  box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5e5f68 0 -3px 0 inset;
+  background: #ffffff;
+  transform: translateY(-2px);
+}
