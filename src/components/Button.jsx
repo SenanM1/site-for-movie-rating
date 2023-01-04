@@ -7,7 +7,7 @@ export default function Button(props) {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       />
-      <div className="buttons">
+      <div className="y">
         <a type="button" className="gitHub" href={props.git}>
           Github<i class="fa-brands fa-square-github"></i>
         </a>
