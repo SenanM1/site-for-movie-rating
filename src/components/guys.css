@@ -1,9 +1,14 @@
+body {
+  background: url(https://source.unsplash.com/1600x900/?grayscale);
+}
+
 div.card {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   padding: 3ch;
-  width: 100%;
-  max-width: 450px;
+  width: 30%;
+  min-width: 400px;
+  height: auto;
   border-radius: 20px;
   margin: 2em;
   background: rgb(8, 44, 112);
@@ -12,17 +17,57 @@ div.card {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.buttons {
-  color: black;
-}
-  
-.profile {
+.cardImage {
   display: flex;
-  align-items: flex-start;
-  justify-content: stretch;
+  align-items:center;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #35b1da;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  justify-content: center;
+  transition: transform .4s;
+  -webkit-box-shadow: 12px -12px 20px -12px rgba(18, 103, 172, 0.35);
+  box-shadow: 12px -12px 20px -12px rgba(20, 129, 213, 0.35);
+}
+.cardImage:hover {
+  transform: scale(1.1);
 }
 
-img {
-  margin: 6px;
-  padding-right: 15px;
+.about {
+  background-color: rgb(235, 172, 55);
+  color:black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: box-shadow .10s, transform .10s;
+  box-shadow: 4px 4px rgb(21, 121, 18), 8px 8px #68148a;
 }
+
+.about:hover {
+  box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px;
+  background-color: #566268;
+  transform: translateY(-2px);
+  color: white;
+}
+
+.lorem {
+  color: #1a1a1a; 
+  background: #fff4a3; 
+  font-family: cursive;
+  margin: 18px 16px;
+  padding: 5px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all .2s;
+  border-radius: 5px;
+}
+.lorem:hover {
+  box-shadow: rgba(154, 156, 160, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px;
+  background-color: #a5e34d;
+  transform: translateY(-2px);
+}
+
