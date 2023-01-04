@@ -18,7 +18,10 @@ export default function Guys(props) {
           Name: {props.name} <br />
           Mail: {props.mail}
         </h4>
-        <p className="lorem">{props.info}</p>
+        <div className="p">
+          <h3>Biography</h3>
+          <p className="lorem">{props.info}</p>
+        </div>
         <Button />
       </div>
     </div>
