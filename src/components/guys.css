@@ -53,8 +53,14 @@ div.card {
   transform: translateY(-2px);
   color: white;
 }
-
-.lorem {
+h3 {
+  color: #7c795d; 
+  font-family: 'Trocchi', serif; 
+  font-size: 18px; 
+  margin: 5px;
+  line-height: 23px; 
+}
+.p {
   color: #1a1a1a; 
   background: #fff4a3; 
   font-family: cursive;
