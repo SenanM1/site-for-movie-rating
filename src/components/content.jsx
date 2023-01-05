@@ -6,7 +6,7 @@ const cardInfo = [
       "https://scontent.fgyd8-1.fna.fbcdn.net/v/t39.30808-6/312406456_1424268908102419_5681419616353952193_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=AxzmJvhOOWwAX9Q_EZy&_nc_ht=scontent.fgyd8-1.fna&oh=00_AfCJSrYgaytpv2e8vVmszh2jN2mztdV9eXk9OFIVO02Few&oe=63BB736C",
     mail: "smardanli13986@ada.edu.az",
     info: "I am 3rd year Information Technology student at ADA University. I am very enthusiastic to web development and I am trying my best to improve it every day.",
-    git: "https://github.com/SenanM1",
+    git: "https://senanm1.github.io/webandapplicationI/",
     you: "https://www.youtube.com/@snanmrdanl3104",
   },
   {
